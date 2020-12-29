@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>AboCoders Gallary</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+
+
+
+
+        <style type="text/css">
+
+    body {
+        background-image: linear-gradient(to right,white, purple, white);
+    }
+
+        img{
+            background: url(lightbox/images/close.png) right no-repeat;
+        }
+        .jlr{
+            font-size: 0;
+        }
+
+        .jlr .jlr_item{
+            font-size: 1rem;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 6px;
+        }
+
+        .jlr img.jlr_img{
+            height: 150px;
+            
+    
+        }
+        .jlr_img{
+            background: url(lightbox/images/close.png) top right no-repeat;
+        }
+        .jlr img.jlr_loaded {
+            -webkit-transition: opacity 1s ease-in;
+            -moz-transition: opacity 1s ease-in;
+            -o-transition: opacity 1s ease-in;
+            -ms-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
+            opacity:1
+        }
+
+        </style>
+        
+    
+    </head>
+    <body>
+
+        <div class = "container">
+            <h6 style = "margin-top: 70px;"> <a href="abocoders_gallary.html" class="text-decoration-none text-success"><i class="fa fa-arrow-left"></i> Back</a></h6> 
+            <h2>AboCoders Open House June 2017</h2>
+            <div id = "jLightroom" class="jlr">
+                <a href = "picture abocoders/aboc/31.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/31.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/32.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/32.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/33.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/33.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/34.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/34.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/35.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/35.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/36.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/36.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/37.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/37.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/38.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/38.jpg" class = "jlr_img"/></a>
+                <a href = "picture abocoders/aboc/39.jpg" data-lightbox="lb1" class="jlr_item"><img src="picture abocoders/aboc/39.jpg" class = "jlr_img"/></a>
+               
+               
+            </div>
+            <h6 style = "margin-top: 70px;"> <a href="abocoders_gallary.html" class="text-decoration-none text-success"><i class="fa fa-arrow-left"></i> Back</a></h6> 
+
+        </div>
+
+    </body>
+    <script src="bootstrap-4.5.2-dist/js/jquery.min.js"></script>
+    <script src = "bootstrap-4.5.2-dist/imagesloaded/imagesloaded.pkgd.min.js"></script>
+     <script src = "bootstrap-4.5.2-dist/js/lightbox.min.js"></script>
+    <script src = "bootstrap-4.5.2-dist/js/jquery.lightroom.js"></script>
+
+
+    <script src = "bootstrap-4.5.2-dist/lightbox-plus-jquery.min.js"></script>
+    <script src = "bootstrap-4.5.2-dist/lightbox-plus-jquery.js"></script>
+    <script src = "bootstrap-4.5.2-dist/lightbox.js"></script>
+    <script src = "bootstrap-4.5.2-dist/lightbox.min.js"></script>
+    
+
+
+    <script type="text/javascript">
+    $("#jLightroom").lightroom({
+        image_container_selector : ".jlr_item",
+        img_selector : "img.jlr_img",
+        img_class_loaded : "jlr_loaded",
+        img_space : 5,
+        img_mode : "min",
+        init_callback: function(elem){$(elem).removeClass("gray_out")}
+    }).init();
+    </script>
+    </html>
